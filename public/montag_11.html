@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Montag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "montag_10.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "montag_12.html";
+        }
+      });
+    }
+  </script>
+
+  <body">
+    <h1>Einstieg in Scratch</h1>
+    <div style="margin-left:30px; font-size: 40px;">
+      <ul>
+        <li>Bei Scratch gibt viele verschiedene Blöcke, das sind die Programmierbefehle</li>
+        <li>Diese Blöcke werden miteinander verbunden, um die Reihenfolge der Abarbeitung zu bestimmen</li>
+        <li>Jeder dieser Blöcke definiert für den Computer eine ganz bestimmte kleine Aufgabe, so wie in der Liste auf der vorherigen Seite</li>
+        <li>Manche Blöcke brauchen Parameter, damit sie wissen mit welchen Daten sie arbeiten sollen</li>
+      </ul>
+    </div>
+  </body>
+</html>

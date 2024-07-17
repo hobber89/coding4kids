@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Montag</title>
+  </head>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "index.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "montag_02.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <div style="position: absolute; top: 45%; left: 33%; color: white; font-size: 70px;">
+      Herzlich Willkommen!
+    </div>
+  </body>
+</html>

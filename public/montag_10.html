@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Montag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "montag_09.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "montag_11.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Grundlagen der Programmierung</h1>
+    <div style="margin-left:30px; font-size: 40px;">
+      Du kanns dir ein Programm wie eine Liste von Anweisungen vorstellen.<br>
+      Ein Einkaufsprogramm für einen Computer muss etwas genauer sein:
+      <ul>
+        <li>Gehe in das Geschäft</li>
+        <li>Gehe zur Wursttheke, warte bis du dran bist und bestelle eine Wurstsemmel</li>
+        <li>Warte bis sie fertig hergerichtet ist</li>
+        <li>Nimm die Wurstsemmel in die linke Hand</li>
+        <li>Gehe zur Kassa und stelle dich an</li>
+        <li>Warte bis du dran bist</li>
+        <li>Lege die Wurstsemmel auf das Band und bezahle die Wurstsemmel</li>
+        <li>Nimm die Wurstsemmel in die linke Hand und gehe aus dem Geschäft</li>
+      </ul>
+      <b style="color: red;">Man muss jeden Schritt sehr genau beschreiben, weil der Computer nicht selbst weiß, was er tun muss!<b>
+    </div>
+  </body>
+</html>

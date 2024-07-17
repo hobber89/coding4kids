@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Montag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "montag_04.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "montag_06.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wir stellen uns kurz vor</h1>
+    <div class="topRight">
+      <img src="img/portrait_wieser.jpg">
+    </div>
+    <div style="margin-left:30px; font-size: 40px;">
+      Wolfgang Wieser
+      <ul>
+        <li>Aus Innsbruck, 35 Jahre alt</li>
+        <li>2009-2014 Informatik Studium in Graz, Abschluss mit Dipl.-Ing.</li>
+        <li>2011-2013 Studienassistent an der TU Graz</li>
+        <li>2014-2019 Softwareentwickler bei Anton Paar SportsTec GmbH (Fußball-Trainingsgerät)</li>
+        <li>seit 2019 Softwareentwickler bei MK-Illumination (Weihnachts- und Festbeleuchtung)</li>
+      </ul>
+    </div>
+    <div class="topRight">
+      <img src="img/portrait_weberberger.jpg">
+    </div>
+    <div style="margin-left:30px; font-size: 40px;">
+      Markus Weberberger
+      <ul>
+        <li>...</li>
+      </ul>
+    </div>
+  </body>
+</html>
