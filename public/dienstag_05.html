@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_04.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_06.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie und warum klont man eine Figur?</h1>
+    <div style="font-size:20px;">
+      Manchmal möchte man mehrere gleiche Figuren haben<br><br>
+      <b style="color: #ff8800">Lösung:</b> man klont die Figur
+    </div>
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/klonen.png">
+    </div>    
+  </body>
+</html>

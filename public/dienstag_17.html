@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_16.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_18.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie lässt man Scratch springen - Variante 2</h1>
+    
+    <ul style="font-size:20px;">
+      <li>Dann erstellen wir die Variable SprungTempo und setzen sie am Anfang auf 0</li>
+      <li>Wenn die Leertaste gedrückt wird setzen wir SprungTempo auf 15</li>
+      <li>Wir erstellen einen Block Schwerkraft</li>
+      <li>Dieser wir in einer "wiederhole fortlaufend" Schleife nach dem Start aufgerufen und ändert y um SprungTempo</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/simple_jump_v2.png">
+    </div>
+    
+  </body>
+</html>

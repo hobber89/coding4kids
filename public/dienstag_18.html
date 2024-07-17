@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_17.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_19.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie lässt man Scratch springen - Variante 3</h1>
+    <h3>Scratch steigt jetzt immer weiter auf, aber er fällt nicht &#128533;</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Im Block Schwerkraft ziehen wir immer 1 vom SprungTempo ab</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/simple_jump_v3.png">
+    </div>
+    
+  </body>
+</html>

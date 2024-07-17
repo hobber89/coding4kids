@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_08.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_10.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man Scratch animiert gehen?</h1>
+    <ul style="font-size:20px;">
+      <li>Scratch muss die Beine abwechselnd vorne haben</li>
+      <li>Scratch muss sich umdrehen können</li>
+      <li>Wir müssen Scratch sagen können in welche Richtung er gehen soll</li>
+    </ul>
+    <h3><b style="color: #ff8800">Lösung:</b></h3>
+    <ul style="font-size:20px;">
+      <li>Wir verwenden verschiedene Kostüme:</li>
+      <ul style="font-size:20px;">
+        <li>Ein Kostüm mit Fuß vorne nach rechts</li>
+        <li>Ein Kostüm bei einem Schritt nach rechts machend</li>
+        <li>Ein Kostüm mit Fuß vorne nach links</li>
+        <li>Ein Kostüm bei einem Schritt nach links machend</li>
+      </ul>
+      <li>Am Anfang geht Scratch wenn eine Taste gedrückt wird</li>
+      <li>Später lassen wir ihn selbst gehen</li>
+    </ul>
+  </body>
+</html>

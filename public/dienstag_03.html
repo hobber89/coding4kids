@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_02.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_04.html";
+        }
+      });
+    }
+  </script>
+
+  <body style="background-color: #23b6c6; color: white;">
+    <h1>Was sind Nachrichten und wofür verwendet man sie?</h1>
+    <div style="font-size:20px;">
+      Manchmal muss eine Figur einer anderen Figur etwas sagen (Levelwechsel,...)<br><br>
+      <b style="color: #ff8800">Lösung:</b> die Figur sendet eine Nachricht und die anderen Figuren warten auf diese Nachricht
+    </div>
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/nachrichten.png">
+    </div>
+  </body>
+</html>

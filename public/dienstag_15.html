@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_13.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_16.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man Scratch animiert gehen - Variante 5</h1>
+    <h3>Da das Gehen in beide Richtungen sehr ähnlich ist, können wir für das Gehen einen Block erstellen.</h3>
+    <h3>Dieser Block bekommt als Parameter die Richtung und den Index vom Kostüm.
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/movement_v5.jpg">
+    </div>
+    
+  </body>
+</html>

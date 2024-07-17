@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_03.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_05.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Ein Beispiel mit Nachrichten</h1>
+    <div style="font-size:20px;">
+      <ul>
+        <li>Man schaut von oben auf das Spiel</li>
+        <li>Ein blauer Kreis wird vom Spieler gesteuert (folgt der Maus)</li>
+        <li>Ein gelber Kreis wird zufällig vom Computer gesteuert</li>
+        <li>Berührt der blaue Kreis den gelben Kreis, wird ein neues Level gestartet</li>
+        <li>Wir ein neues Level gestartet, werden beide Kreise neu positioniert</li>
+      </ul>
+    </div>
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/nachrichten_beispiel.png">
+    </div>
+  </body>
+  
+</html>

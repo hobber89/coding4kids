@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Dienstag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "dienstag_10.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "dienstag_12.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie lässt man Scratch animiert gehen - Variante 2</h1>
+    <h3>Das funktioniert nur einmal &#128533;</h3>
+    <h3><b style="color: #ff8800">Lösung:</b> wir setzen am Anfang alles auf Startwerte, damit es immer gleich aussieht.</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Warte bis die Fahne gedrückt wird</li>
+      <li>Stelle Scratch in die Mitte (0, 0)</li>
+      <li>Ziehe Kostüm 1 an</li>
+    </ul>
+    
+    <div class="centered">
+      <img src="img/movement_v2.jpg">
+    </div>
+    
+  </body>
+</html>
