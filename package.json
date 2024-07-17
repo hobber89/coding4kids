@@ -1,0 +1,14 @@
+{
+  "name": "Coding4Kids",
+  "version": "1.0.0",
+  "description": "Coding4Kids Website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Wolfgang Wieser"
+}

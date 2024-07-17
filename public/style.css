@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  text-shadow: 4px 2px #000000;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topRight {
+  float: right;
+}
+
+.topRight2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+
+body {
+  padding-top:20px;
+  padding-left:50px;
+}
+
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+tr.noBorder td {
+  border: 0;
+}
