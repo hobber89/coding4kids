@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_02.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_04.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie kann man den Hintergrund bewegen?</h1>
+    <div style="font-size:20px;">
+    Dafür lassen wir einen Käfer über einen Hintergrund, der sich selbst bewegt, krabbeln und es gibt folgende Regeln:
+    <ul>
+      <li>Der Hintergrund bewegt sich mit GeschwindkeitHintergrund (1) von rechts nach links</li>
+      <li>Der Hintergrund hat Linien, die der Käfer nicht berühren darf und es gibt 4 verschiedene Varianten</li>
+      <li>Der Käfer kann mit GeschwindkeitKäfer (5) nach oben und unten krabbeln, um auszuweichen</li>
+      <li>Alle 10 Sekunden wird der Hintergrund schneller</li>
+      <li>Auf dem Hintergrund gibt es immer wieder gelbe Kreise, die den Käfer schneller machen</li>
+      <li>Dabei wird pro Berührung nur einmal die GeschwindkeitKäfer erhöht!</li>
+    </ul>
+    <div class="centered">
+      <img style="margin-top:180px;" src="img/kaefer_beispiel.png">
+    </div>
+  </body>
+</html>

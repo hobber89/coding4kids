@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_07.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_09.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 4</h1>
+    <h3>Der Spieler soll springen können, aber nur wenn er am Boden steht.</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Der Spieler ist jetzt 1 Pixel über den Boden &rarr; er muss 1 Pixel nach unten</li>
+      <li>Wir testen, ob er jetzt am Boden steht</li>
+      <li>Wir bewegen ihn etwas nach oben</li>
+      <li>Wir setzen in wieder 1 Pixel nach oben, um das vorher auszugleichen</li>
+    </ul>
+
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v4.jpg">
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_16.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_18.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 13</h1>
+    <h3>Wenn der Luftballon fertig aufgestiegen ist, wechseln wir ins nächste Level</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Wir fügen bei der Figur Welt ein neues Kostüm hinzu</li>
+      <li>Die Figur Ziel schickt die Nachricht "Level geschafft" nachdem der Luftballon aufgestiegen ist</li>
+      <li>Wir fügen Figur Spielsteuerung hinzu (nicht zu sehen)</li>
+      <li>Die Figur Spielsteuerung empfängt die Nachricht "Level geschafft", erhöht das Level und schickt die Nachricht "Level starten"</li>
+      <li>Am Anfang setzt die Figur Spielsteuerung das Level auf 1 und schickt auch die Nachricht "Level starten"</li>
+      <li>Die Figur Spieler positioniert sich wenn sie diese Nachricht bekommt passend zum Level</li>
+      <li>Auch die Figur Ziel positioniert sich wenn sie diese Nachricht bekommt passend zum Level</li>
+      <li>Die Figur Welt wechselt das Kostüm passend zum Level</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:400px;" src="img/jump_v13.jpg">
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_10.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_12.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 7</h1>
+    <h3>Jetzt fällt der Spieler immer, auch wenn er am Boden steht &#128533;</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Wenn der Spieler den Boden berührt setzen wir Sprunggeschwindigkeit auf 0</li>
+      <li>Sonst reduzieren wir weiterhin die Sprunggeschwindigkeit</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v7.jpg">
+    </div>
+    
+  </body>
+</html>

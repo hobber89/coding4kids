@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_04.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_06.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 1</h1>
+    <h3>Das ist die Basisversion.</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Wir suchen uns eine Spielfigur aus</li>
+      <li>Wir ersetzen sie durch einen Würfel</li>
+      <li>Wir zeichnen das erste Level</li>
+      <li>Wir lassen den Spieler hin und her gehen.</li>
+    </ul>
+
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v1.jpg">
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_17.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_19.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 14</h1>
+    <h3>Wir könnten weitere Levels hinzufügen, aber hier beenden wir das Spiel nach Level 2</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Die Figur Spielsteuerung bekommt ein neues Kostüm mit dem Text "Spielende"</li>
+      <li>Die Figur Spielsteuerung überpüft ob Level 2 beendet wurde und beendet dann das Spiel"</li>
+      <li>Wenn das zutrifft:</li>
+      <ul>
+        <li>Die Figur Spielsteuerung wechselt zum Kostüm mit dem Text "Spielende"</li>
+        <li>Die Figur Spielsteuerung beendet dann das Spiel"</li>
+      </ul>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v14.jpg">
+    </div>
+    
+  </body>
+</html>

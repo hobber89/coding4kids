@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_12.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_14.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 9</h1>
+    <h3>Da das Springen funktioniert, können wir die eigentliche Spielfigur verwenden.</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Wir erstellen eine neue Figur mit der eigentlichen Spielfigur</li>
+      <li>Die neue Figur Figur folgt der anderen Figur, damit sie sich gleich verhält</li>
+    </ul>
+        
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v9.jpg">
+    </div>
+    
+  </body>
+</html>

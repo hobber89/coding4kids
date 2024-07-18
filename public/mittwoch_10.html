@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_09.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_11.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man eine Spielfigur springen und Levels erreichen - Version 6</h1>
+    <h3>Jetzt steigt der Spieler endlos nach oben, das geht auch nicht.</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Wir reduzieren die Sprunggeschwindigkeit nach jedem Aufruf</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px;" src="img/jump_v6.jpg">
+    </div>
+    
+  </body>
+</html>

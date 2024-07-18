@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_03.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_05.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Wie lässt man Spielfigur springen und Levels erreichen?</h1>
+    <ul style="font-size:20px;">
+      <li>Zuerst verwenden wir einen Block als Spielfigur, da dieser nicht irgendwo an der Seite hängen bleiben kann</li>
+      <li>Dann lassen wir den hin und hergehen, solange er nirgends anstößt</li>
+      <li>Danach lassen wir ihn auch springen und wieder fallen</li>
+      <li>Wenn das klappt, ersetzen wir den Block durch unsere eigentliche Spielfigur</li>
+      <li>Wir erstellen ein zweites Level</li>
+      <li>Zum Schluss fügen wird zum ersten Level ein Ziel, das zum zweiten Level führt hinzu.</li>
+    </ul>
+  </body>
+</html>

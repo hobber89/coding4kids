@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_19.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_21.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie man eine Figur einem Weg folgen lassen?</h1>
+    <h3>Wir verwenden nur gerade Wege, sonst wird es noch komplizierter!</h3>
+    
+    <ul style="font-size:20px;">
+      <li>Dafür benötigt die Figur vier Sensor Kostüme</li>
+      <li>Jedes dieser Kostüme schaut entweder nach oben, unten, rechts oder links, ob der Weg in diese Richtung weitergeht</li>
+      <li>Falls der Weg weiter geht, geht die Figur in diese Richtung weiter</li>
+      <li>Sonst ändert sie die Blickrichtung</li>
+      <li>Während der Überprüfung trägt sie das Sensor Kostüm, sonst trägt sie ihr normales Kostüm</li>
+    </ul>
+    
+    <div class="centered">
+      <img style="margin-top:100px; margin-left:290px;" src="img/sensor_right.png"><br>
+      <span>Sensor nach rechts (rote Fläche ist Sensor, schwarz muss auf dem Mittelpunkt liegen, Größe: 3x1 Pixel)</span>
+    </div>
+    <div class="centered">
+      <img style="margin-top:320px; margin-left:80px;" src="img/testStrecke.png"><br>
+      <span>Teststrecke mit nur geraden Teilstücken</span>
+    </div>
+    
+  </body>
+</html>

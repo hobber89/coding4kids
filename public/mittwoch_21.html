@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Mittwoch</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "mittwoch_20.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "mittwoch_22.html";
+        }
+      });
+    }
+  </script>  
+
+  <body>
+    <h1>Wie man eine Figur einem Weg folgen lassen?</h1>
+    
+    <ul style="font-size:20px;">
+      <li>Wir definieren folgende Variablen:</li>
+      <ul>
+        <li>Richtung: definiert die Blickrichtung</li>
+          <ul>
+            <li>1 bedeutet nach rechts</li>
+            <li>2 bedeutet nach unten</li>
+            <li>3 bedeutet nach links</li>
+            <li>4 bedeutet nach oben</li>
+          </ul>
+        <li>deltaX: definiert wieviel sich die Figur auf der X-Achse (links, rechts) für die aktueller Blickrichtung bewegt</li>
+        <li>deltaY: definiert wieviel sich die Figur auf der Y-Achse (oben, unten) für die aktueller Blickrichtung bewegt</li>
+      </ul>
+      <br>
+      <li>Wir definieren folgende Funktionen:</li>
+      <ul>
+        <li>updateDeltas: setzt deltaX und deltaY passend zur Blickrichtung</li>
+        <li>Bewegung:</li>
+        <ul>
+          <li>wechselt in das Sensor Kostüm für die aktuelle Blickrichtung</li>
+          <li>ändert die Position um deltaX und deltaY</li>
+          <li>schaut ob der Sensor den Boden berührt, falls nicht:</li>
+          <ul>
+            <li>Es ändert die Blickrichtung</li>
+            <li>Es ruft updateDeltas auf</li>
+          </ul>
+          <li>wechsel in das normale Kostüm</li>
+        </ul>
+      </ul>
+    </ul>
+    
+    <h3><a style="font-size:30px;" href="https://scratch.mit.edu/projects/561328753/" target="_blank">geteiltes Projekt</a><br>Problem bei dieser Version: es funktioniert nur gut bei einem Kreis &#128533; Aber ich werde bis morgen eine einfache Lösung suchen...</h3>
+    
+  </body>
+</html>
