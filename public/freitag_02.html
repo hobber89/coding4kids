@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <title>Coding4Kids 2024 - Freitag</title>
+  </head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      $(window).on('keydown', function (evt){
+        if(evt.keyCode == 37) {
+          window.location.href = "freitag_01.html";
+        }
+        else if(evt.keyCode == 39) {
+          window.location.href = "freitag_03.html";
+        }
+      });
+    }
+  </script>
+
+  <body>
+    <h1>Heute ist euer Tag</h1>
+    <h3>Heute machen wir eure Projekte fertig und ihr präsentiert sie.</h3>
+  </body>
+</html>
